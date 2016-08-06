@@ -1,0 +1,11 @@
+files: ./spec/**/*.cr
+run: crystal spec
+---
+files: ./src/**/*.cr
+run: crystal spec
+---
+files: ./samples/lunar_lander.cr
+run: crystal build samples/lunar_lander.cr
+---
+files: ./shard.yml
+run: crystal deps
