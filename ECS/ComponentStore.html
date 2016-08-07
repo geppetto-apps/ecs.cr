@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/geppetto-apps/ecs.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>ECS::ComponentStore - github.com/geppetto-apps/ecs.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/geppetto-apps/ecs.cr/ECS" data-name="ecs">
+      <a href="../ECS.html">ECS</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/Component" data-name="ecs::component">
+      <a href="../ECS/Component.html">Component</a>
+      
+    </li>
+  
+  <li class="parent current" data-id="github.com/geppetto-apps/ecs.cr/ECS/ComponentStore" data-name="ecs::componentstore">
+      <a href="../ECS/ComponentStore.html">ComponentStore</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/ComponentStore/EntCompHash" data-name="ecs::componentstore::entcomphash">
+      <a href="../ECS/ComponentStore/EntCompHash.html">EntCompHash</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/Entity" data-name="ecs::entity">
+      <a href="../ECS/Entity.html">Entity</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/EntityManager" data-name="ecs::entitymanager">
+      <a href="../ECS/EntityManager.html">EntityManager</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/GameLoop" data-name="ecs::gameloop">
+      <a href="../ECS/GameLoop.html">GameLoop</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/ecs.cr/ECS/System" data-name="ecs::system">
+      <a href="../ECS/System.html">System</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> ECS::ComponentStore
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../ECS/ComponentStore.html">ECS::ComponentStore</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L2" target="_blank">ecs/component_store.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#add%28entity%3AEntity%2Ccomponent%3AComponent%29-instance-method" class="signature"><strong>#add</strong>(entity : Entity, component : Component)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#has%28entity%3AEntity%2Ccomponent%3AComponent%29-instance-method" class="signature"><strong>#has</strong>(entity : Entity, component : Component)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#has_type%28entity%3AEntity%2Cklass%3AComponent.class%29-instance-method" class="signature"><strong>#has_type</strong>(entity : Entity, klass : Component.class)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#with_type%28klass%3AComponent.class%29%3AEntCompHash-instance-method" class="signature"><strong>#with_type</strong>(klass : Component.class) : EntCompHash</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="add&#40;entity:Entity,component:Component&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>add</strong>(entity : <a href="../ECS/Entity.html">Entity</a>, component : <a href="../ECS/Component.html">Component</a>)
+
+        <a class="method-permalink" href="#add%28entity%3AEntity%2Ccomponent%3AComponent%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has&#40;entity:Entity,component:Component&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>has</strong>(entity : <a href="../ECS/Entity.html">Entity</a>, component : <a href="../ECS/Component.html">Component</a>)
+
+        <a class="method-permalink" href="#has%28entity%3AEntity%2Ccomponent%3AComponent%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has_type&#40;entity:Entity,klass:Component.class&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>has_type</strong>(entity : <a href="../ECS/Entity.html">Entity</a>, klass : Component.class)
+
+        <a class="method-permalink" href="#has_type%28entity%3AEntity%2Cklass%3AComponent.class%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="with_type&#40;klass:Component.class&#41;:EntCompHash-instance-method">
+      <div class="signature">
+        
+        def <strong>with_type</strong>(klass : Component.class) : <a href="../ECS/ComponentStore/EntCompHash.html">EntCompHash</a>
+
+        <a class="method-permalink" href="#with_type%28klass%3AComponent.class%29%3AEntCompHash-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/ecs.cr/blob/c2663e36a6e88a993077668183e5434ee4bc375a/src/ecs/component_store.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
