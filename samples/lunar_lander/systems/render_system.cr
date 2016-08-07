@@ -4,7 +4,7 @@ class RenderSystem < ECS::System
   private getter :width
   private getter :height
 
-  TARGET_FPS = 60
+  TARGET_FPS      = 60
   TARGET_INTERVAL = 1000.0 / TARGET_FPS
 
   def initialize

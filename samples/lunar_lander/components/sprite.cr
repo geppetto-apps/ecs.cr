@@ -24,7 +24,7 @@ class Sprite < ECS::Component
     self.new(
       w,
       h,
-      text.join().chars
+      text.join.chars
     )
   end
 

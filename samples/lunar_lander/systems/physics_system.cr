@@ -1,6 +1,6 @@
 class PhysicsSystem < ECS::System
   GRAVITY = 10.0
-  DRAG = 0.2
+  DRAG    =  0.2
 
   def update(delta, manager : ECS::EntityManager)
     manager.get_all_entities_with_component_of_type(GravitySensitive).each do |entity|
