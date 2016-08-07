@@ -1,6 +1,6 @@
-[![Build Status](http://ci.geppetto.no/api/badges/geppetto-apps/ECS.cr/status.svg)](http://ci.geppetto.no/geppetto-apps/ECS.cr)
-[![Dependency Status](https://shards.rocks/badge/github/geppetto-apps/ECS.cr/status.svg)](https://shards.rocks/github/geppetto-apps/ECS.cr)
-[![devDependency Status](https://shards.rocks/badge/github/geppetto-apps/ECS.cr/dev_status.svg)](https://shards.rocks/github/geppetto-apps/ECS.cr)
+[![Build Status](http://ci.geppetto.no/api/badges/geppetto-apps/ecs.cr/status.svg)](http://ci.geppetto.no/geppetto-apps/ecs.cr)
+[![Dependency Status](https://shards.rocks/badge/github/geppetto-apps/ecs.cr/status.svg)](https://shards.rocks/github/geppetto-apps/ecs.cr)
+[![devDependency Status](https://shards.rocks/badge/github/geppetto-apps/ecs.cr/dev_status.svg)](https://shards.rocks/github/geppetto-apps/ecs.cr)
 
 # ECS.cr
 
@@ -32,7 +32,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (https://github.com/geppetto-apps/ECS.cr/fork)
+1. Fork it (https://github.com/geppetto-apps/ecs.cr/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Write tests for your feature (in the spec folder)
 4. Implement your feature
