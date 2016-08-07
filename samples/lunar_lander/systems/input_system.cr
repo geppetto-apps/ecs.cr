@@ -1,3 +1,5 @@
+require "crsfml"
+
 class InputSystem < ECS::System
   def update(delta, manager : ECS::EntityManager)
     manager.get_all_entities_with_component_of_type(Engine).each do |entity|
