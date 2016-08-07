@@ -32,5 +32,11 @@ module ECS
     rescue IndexError
       raise "Entity ##{entity} has no #{klass.name} component"
     end
+
+    def get_component_of_type?(entity : Entity, klass : T.class)
+      component_store.with_type(klass)[entity].first.as(T)
+    rescue IndexError
+      nil
+    end
   end
 end
