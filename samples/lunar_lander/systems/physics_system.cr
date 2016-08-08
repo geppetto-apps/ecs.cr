@@ -3,17 +3,19 @@ class PhysicsSystem < ECS::System
   DRAG    =  0.2
 
   def update(delta, manager : ECS::EntityManager)
-    manager.get_all_entities_with_component_of_type(GravitySensitive).each do |entity|
+    manager.get_all_entities_with_component_of_type(SpatialState).each do |entity|
       spatial_state = manager.get_component_of_type(entity, SpatialState)
-      gravity_sensitive = manager.get_component_of_type(entity, GravitySensitive)
 
       apply_forces(spatial_state, delta)
       cap_coordinates(spatial_state)
 
-      gravity_sensitive.landed = spatial_state.y == 1
+      if manager.has_component_of_type(entity, GravitySensitive)
+        component = manager.get_component_of_type(entity, GravitySensitive)
+        component.landed = spatial_state.y == 1
+        apply_gravity(spatial_state, delta)
+      end
 
-      apply_gravity(spatial_state, delta)
-      apply_drag(spatial_state, delta)
+      apply_drag(spatial_state, delta) if manager.has_component_of_type(entity, DragSensitive)
     end
   end
 
