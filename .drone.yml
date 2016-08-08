@@ -4,9 +4,3 @@ build:
     - crystal deps
     - crystal tool format --check src spec
     - crystal spec
-    - crystal doc src/ecs.cr
-
-publish:
-  gh_pages:
-    source: doc
-    remote: origin
