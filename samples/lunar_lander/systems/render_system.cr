@@ -7,6 +7,8 @@ class RenderSystem < ECS::System
   TARGET_FPS      = 60
   TARGET_INTERVAL = 1000.0 / TARGET_FPS
 
+  @@debug = ""
+
   def initialize
     @ms_since_previous_render = 0.0
     @width = 80
@@ -72,7 +74,7 @@ class RenderSystem < ECS::System
       buffer += "*" + line.join("") + "*" + "\n"
     end
     buffer += "*" * (width + 2) + "\n"
-    buffer += $debug + " FPS: #{fps.to_i}\n"
+    buffer += @@debug + " FPS: #{fps.to_i}\n"
     print buffer
   end
 

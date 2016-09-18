@@ -4,8 +4,6 @@ require "../src/ecs"
 require "./lunar_lander/components/*"
 require "./lunar_lander/systems/*"
 
-$debug = ""
-
 module LunarLander
   class Application
     def self.main
