@@ -1,5 +1,5 @@
 build:
-  image: geppettoapps/crystal-libxml2:0.18.7
+  image: geppettoapps/crystal-libxml2:0.20.5
   commands:
     - crystal deps
     - crystal tool format --check src spec

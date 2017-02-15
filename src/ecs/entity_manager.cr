@@ -27,13 +27,13 @@ module ECS
       component_store.with_type(klass).keys
     end
 
-    def get_component_of_type(entity : Entity, klass : T.class)
+    def get_component_of_type(entity : Entity, klass : T.class) forall T
       component_store.with_type(klass)[entity].first.as(T)
     rescue IndexError
       raise "Entity ##{entity} has no #{klass.name} component"
     end
 
-    def get_component_of_type?(entity : Entity, klass : T.class)
+    def get_component_of_type?(entity : Entity, klass : T.class) forall T
       component_store.with_type(klass)[entity].first.as(T)
     rescue IndexError
       nil
